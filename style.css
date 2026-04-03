@@ -290,7 +290,7 @@ img{display:block;max-width:100%}
 }
 @media(max-width:900px){
   .hero-logo-float{display:none}
-  .dishes-grid{grid-template-columns:1fr;max-width:480px;margin:0 auto}
+  .dishes-grid{grid-template-columns:1fr 1fr;max-width:680px;margin:0 auto}
   .dish-card-tall .dish-img{height:260px}
   .gallery-mosaic{grid-template-columns:1fr 1fr;grid-template-rows:auto}
   .gm-tall{grid-row:auto}
@@ -302,6 +302,7 @@ img{display:block;max-width:100%}
   .hero{padding:0 0 80px 5vw}
   .hero-title{font-size:clamp(3rem,16vw,5.5rem)}
   .dishes-section,.about-text,.gallery-section,.testi-section,.quote-section,.reserve-section{padding:5rem 1.5rem}
+  .dishes-grid{grid-template-columns:1fr;max-width:480px;margin:0 auto}
   .exp-text{padding:4rem 1.5rem}
   .gallery-mosaic{grid-template-columns:1fr;height:auto}
   .gm-item{height:220px}
