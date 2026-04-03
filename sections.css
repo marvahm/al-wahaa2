@@ -162,3 +162,77 @@
 .fb-ar{font-family:var(--font-arabic);color:var(--gold)}
 .footer-legal{display:flex;gap:1rem;align-items:center}
 .footer-legal a:hover{color:var(--cream)}
+
+
+/* ══════════════════════════════════════════
+   RESERVATION FORM
+══════════════════════════════════════════ */
+.reserve-form{
+  width:100%;max-width:720px;margin:2rem auto 0;
+  display:flex;flex-direction:column;gap:1rem;
+  text-align:left;
+}
+.rf-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.rf-field{display:flex;flex-direction:column;gap:0.4rem}
+.rf-full{grid-column:1/-1}
+.rf-field label{
+  font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;
+  color:rgba(255,255,255,0.55);font-weight:600;font-family:var(--font-body);
+}
+.rf-field label span{color:var(--gold-light)}
+.rf-field input,
+.rf-field select,
+.rf-field textarea{
+  background:rgba(255,255,255,0.07);
+  border:1px solid rgba(255,255,255,0.18);
+  border-radius:2px;
+  color:#fff;
+  font-family:var(--font-body);
+  font-size:0.85rem;
+  padding:0.75rem 1rem;
+  transition:border-color 0.25s,background 0.25s;
+  outline:none;
+  width:100%;
+}
+.rf-field input::placeholder,
+.rf-field textarea::placeholder{color:rgba(255,255,255,0.28)}
+.rf-field select option{background:#2a1208;color:#fff}
+.rf-field input:focus,
+.rf-field select:focus,
+.rf-field textarea:focus{
+  border-color:var(--gold-light);
+  background:rgba(255,255,255,0.11);
+}
+.rf-field input[type="date"]::-webkit-calendar-picker-indicator{filter:invert(1);opacity:0.5;cursor:pointer}
+.rf-field textarea{resize:vertical;min-height:80px}
+.rf-actions{display:flex;gap:1rem;flex-wrap:wrap;margin-top:0.5rem;justify-content:center}
+.rf-submit{cursor:pointer}
+.rf-submit:disabled{opacity:0.6;cursor:not-allowed;transform:none !important}
+.rf-success{
+  display:none;
+  background:rgba(100,200,100,0.12);
+  border:1px solid rgba(100,200,100,0.35);
+  border-radius:2px;
+  color:rgba(200,255,200,0.9);
+  font-size:0.85rem;
+  padding:0.9rem 1.2rem;
+  text-align:center;
+  letter-spacing:0.04em;
+}
+.rf-error{
+  display:none;
+  background:rgba(220,80,60,0.12);
+  border:1px solid rgba(220,80,60,0.35);
+  border-radius:2px;
+  color:rgba(255,180,170,0.9);
+  font-size:0.85rem;
+  padding:0.9rem 1.2rem;
+  text-align:center;
+}
+.rf-error a{color:var(--gold-light);text-decoration:underline}
+
+@media(max-width:600px){
+  .rf-row{grid-template-columns:1fr}
+  .rf-actions{flex-direction:column;align-items:stretch}
+  .rf-actions .btn{text-align:center}
+}
