@@ -35,7 +35,7 @@
 .dishes-header{text-align:center;margin-bottom:4rem}
 .dishes-header .section-eyebrow{justify-content:center}
 .dishes-header .section-eyebrow::before{display:none}
-.dishes-grid{display:grid;grid-template-columns:1fr 1.15fr 1fr;gap:16px;max-width:1200px;margin:0 auto}
+.dishes-grid{display:grid;grid-template-columns:1fr 1.15fr 1fr 1fr;gap:16px;max-width:1400px;margin:0 auto}
 .dish-card{background:var(--cream);border-radius:3px;overflow:hidden;transition:transform 0.4s var(--ease-out),box-shadow 0.4s;transition-delay:var(--delay,0s)}
 .dish-card:hover{transform:translateY(-6px);box-shadow:0 20px 60px rgba(42,32,24,0.14)}
 .dish-img{height:260px;transition:transform 0.6s var(--ease-out)}
@@ -44,6 +44,7 @@
 .dc-1{background:linear-gradient(160deg,#c4714a 0%,#8b3e1f 40%,#3d1508 100%)}
 .dc-2{background:linear-gradient(160deg,var(--gold) 0%,#a07030 35%,#5c3010 70%,#2a1208 100%)}
 .dc-3{background:linear-gradient(160deg,#7a8c6e 0%,#4a5e3e 40%,#2a3a1e 100%)}
+.dc-4{background:linear-gradient(160deg,#5a3a6e 0%,#3d2050 40%,#1e0a2e 100%)}
 .dish-info{padding:1.8rem}
 .dish-tag{display:inline-block;font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--terracotta);background:rgba(184,92,48,0.08);padding:0.22rem 0.65rem;border-radius:20px;margin-bottom:0.8rem;font-weight:600}
 .dish-info h3{font-family:var(--font-display);font-size:1.3rem;font-weight:600;color:var(--charcoal);margin-bottom:0.6rem;letter-spacing:0.04em}
