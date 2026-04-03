@@ -6,6 +6,9 @@
 (function () {
   'use strict';
 
+  /* Mark JS as loaded — enables reveal animations safely */
+  document.documentElement.classList.add('js-loaded');
+
   /* Preloader */
   window.addEventListener('load', function () {
     setTimeout(function () {
