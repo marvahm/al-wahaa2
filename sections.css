@@ -1,7 +1,8 @@
 /* ══════════════════════════════════════════
    ABOUT SECTION
 ══════════════════════════════════════════ */
-.about-section{display:grid;grid-template-columns:1.1fr 1fr;min-height:80vh;overflow:hidden}
+.about-section{
+  width:100%;display:grid;grid-template-columns:1.1fr 1fr;min-height:80vh;overflow:hidden}
 
 .about-visual{
   position:relative;
@@ -29,7 +30,8 @@
 /* ══════════════════════════════════════════
    DISHES SECTION
 ══════════════════════════════════════════ */
-.dishes-section{padding:7rem 4rem;background:var(--sand)}
+.dishes-section{
+  width:100%;padding:7rem 4rem;background:var(--sand)}
 .dishes-header{text-align:center;margin-bottom:4rem}
 .dishes-header .section-eyebrow{justify-content:center}
 .dishes-header .section-eyebrow::before{display:none}
@@ -82,7 +84,8 @@
 /* ══════════════════════════════════════════
    EXPERIENCE SECTION
 ══════════════════════════════════════════ */
-.experience-section{background:var(--charcoal);display:grid;grid-template-columns:1fr 1fr;overflow:hidden}
+.experience-section{
+  width:100%;background:var(--charcoal);display:grid;grid-template-columns:1fr 1fr;overflow:hidden}
 .exp-text{padding:6.5rem 5rem;display:flex;flex-direction:column;justify-content:center}
 .exp-list{list-style:none;margin:1.5rem 0;display:flex;flex-direction:column;gap:1rem}
 .exp-list li{display:flex;align-items:center;gap:0.9rem;font-size:0.87rem;color:rgba(250,246,240,0.65);line-height:1.5}
@@ -97,7 +100,8 @@
 /* ══════════════════════════════════════════
    TESTIMONIALS
 ══════════════════════════════════════════ */
-.testi-section{padding:7rem 4rem;background:var(--sand);text-align:center}
+.testi-section{
+  width:100%;padding:7rem 4rem;background:var(--sand);text-align:center}
 .testi-section .section-eyebrow{justify-content:center}
 .testi-section .section-eyebrow::before{display:none}
 .testi-track{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;max-width:1200px;margin:3rem auto 0}
@@ -116,7 +120,8 @@
 /* ══════════════════════════════════════════
    RESERVE BANNER
 ══════════════════════════════════════════ */
-.reserve-section{position:relative;padding:9rem 4rem;overflow:hidden;text-align:center}
+.reserve-section{
+  width:100%;position:relative;padding:9rem 4rem;overflow:hidden;text-align:center}
 .reserve-bg{position:absolute;inset:0;background:linear-gradient(130deg,#c4714a 0%,#a85935 30%,#8a3e1e 65%,#c4714a 100%);background-size:400% 400%;animation:reserveGrad 10s ease infinite}
 @keyframes reserveGrad{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
 .reserve-grain{position:absolute;inset:0;opacity:0.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='g'%3E%3CfeTurbulence baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23g)'/%3E%3C/svg%3E")}
@@ -156,4 +161,3 @@
 .fb-ar{font-family:var(--font-arabic);color:var(--gold)}
 .footer-legal{display:flex;gap:1rem;align-items:center}
 .footer-legal a:hover{color:var(--cream)}
-
