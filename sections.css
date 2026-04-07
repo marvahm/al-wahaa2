@@ -55,7 +55,7 @@
 .dish-info p  { font-size:0.83rem; color:var(--muted); line-height:1.75; margin-bottom:1.2rem; }
 .dish-link    { font-size:0.72rem; letter-spacing:0.1em; color:var(--terracotta); font-weight:600; transition:gap 0.2s; display:inline-flex; align-items:center; gap:0.3rem; }
 .dish-link:hover { gap:0.6rem; }
-.dishes-cta { text-align:center; margin-top:3.5rem; }
+.dishes-cta { text-align:center; margin-top:3.5rem; display:flex; flex-wrap:wrap; gap:0.8rem; justify-content:center; }
 
 /* Tablet: 2 columns */
 @media(max-width:900px){
