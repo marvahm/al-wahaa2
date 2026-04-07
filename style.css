@@ -274,40 +274,107 @@ img{display:block;max-width:100%}
 /* ══════════════════════════════════════════
    RESPONSIVE
 ══════════════════════════════════════════ */
+
+/* ── Tablet landscape: hide desktop nav ── */
 @media(max-width:1100px){
   .nav-center{display:none}
   .hamburger{display:flex}
-  .nav-links-secondary{display:none}
   .about-section{grid-template-columns:1fr}
   .about-visual{min-height:380px}
   .about-text{padding:4rem 2.5rem}
   .experience-section{grid-template-columns:1fr}
   .exp-text{padding:5rem 2.5rem}
-  .exp-info-cards{grid-template-columns:repeat(4,1fr);border-left:none;border-top:1px solid rgba(255,255,255,0.06)}
+  .exp-info-cards{grid-template-columns:repeat(2,1fr);border-left:none;border-top:1px solid rgba(255,255,255,0.06)}
   .footer-top{grid-template-columns:1fr 1fr;padding:4rem 3rem 3rem}
   .footer-brand{grid-column:1/-1}
   .footer-bottom{padding:1.6rem 3rem}
 }
+
+/* ── Tablet portrait ── */
 @media(max-width:900px){
   .hero-logo-float{display:none}
-  .dishes-grid{grid-template-columns:1fr 1fr;max-width:680px;margin:0 auto}
+  /* Dishes: 2 columns on tablet */
+  .dishes-grid{grid-template-columns:1fr 1fr;gap:12px;max-width:100%;margin:0 auto}
   .dish-card-tall .dish-img{height:260px}
+  /* Gallery: 2 columns */
   .gallery-mosaic{grid-template-columns:1fr 1fr;grid-template-rows:auto}
   .gm-tall{grid-row:auto}
   .gm-wide{grid-column:auto}
   .testi-track{grid-template-columns:1fr;max-width:540px;margin-left:auto;margin-right:auto}
   .exp-info-cards{grid-template-columns:1fr 1fr}
 }
+
+/* ── Mobile ── */
 @media(max-width:768px){
-  .hero{padding:0 0 80px 5vw}
+  /* Prevent any horizontal overflow */
+  body,html{overflow-x:hidden;max-width:100vw}
+  *{box-sizing:border-box;min-width:0}
+
+  /* Hero */
+  .hero{padding:0 1.5rem 80px}
   .hero-title{font-size:clamp(3rem,16vw,5.5rem)}
-  .dishes-section,.about-text,.gallery-section,.testi-section,.quote-section,.reserve-section{padding:5rem 1.5rem}
-  .dishes-grid{grid-template-columns:1fr;max-width:480px;margin:0 auto}
-  .exp-text{padding:4rem 1.5rem}
-  .gallery-mosaic{grid-template-columns:1fr;height:auto}
-  .gm-item{height:220px}
+  .hero-btns{flex-direction:column;width:100%;max-width:300px}
+  .hero-btn{text-align:center;width:100%}
+
+  /* Section padding */
+  .dishes-section{padding:4rem 1.2rem}
+  .about-text{padding:3rem 1.5rem}
+  .gallery-section{padding:4rem 1.2rem}
+  .testi-section{padding:4rem 1.2rem}
+  .quote-section{padding:5rem 1.5rem}
+  .reserve-section{padding:4rem 1.2rem 5rem}
+  .exp-text{padding:3.5rem 1.5rem}
+
+  /* Dishes: 1 column on mobile */
+  .dishes-grid{
+    grid-template-columns:1fr;
+    gap:1rem;
+    max-width:100%;
+    width:100%;
+  }
+  .dish-card{width:100%}
+  .dish-card-tall .dish-img{height:240px}
+  .dish-img{height:220px}
+
+  /* Gallery: 1 column on mobile */
+  .gallery-mosaic{
+    grid-template-columns:1fr;
+    grid-template-rows:auto;
+    max-width:100%;
+    gap:8px;
+  }
+  .gm-item{height:200px;width:100%}
+  .gm-tall,.gm-wide{grid-row:auto;grid-column:auto}
+
+  /* Experience cards: 2×2 grid */
+  .experience-section{grid-template-columns:1fr}
+  .exp-info-cards{grid-template-columns:1fr 1fr;border-left:none;border-top:1px solid rgba(255,255,255,0.06)}
+  .exp-card{padding:2rem 1.5rem}
+
+  /* Testimonials */
+  .testi-track{grid-template-columns:1fr;max-width:100%}
+
+  /* About visual */
+  .about-section{grid-template-columns:1fr}
+  .about-visual{min-height:300px}
+
+  /* Reserve form */
+  .rf-row{grid-template-columns:1fr}
+  .rf-actions{flex-direction:column;align-items:stretch}
+  .rf-actions .btn{text-align:center;width:100%}
+
+  /* Footer */
   .footer-top{grid-template-columns:1fr;gap:2.5rem;padding:3rem 1.5rem 2rem}
+  .footer-brand{grid-column:auto}
   .footer-bottom{flex-direction:column;gap:0.8rem;text-align:center;padding:1.4rem 1.5rem}
-  .hero-btns{flex-direction:column;max-width:280px}
-  .hero-btn{text-align:center}
+}
+
+/* ── Small phones (iPhone SE etc) ── */
+@media(max-width:390px){
+  .hero-title{font-size:3rem}
+  .hero-script-line{font-size:2rem}
+  .section-title{font-size:1.6rem}
+  .exp-info-cards{grid-template-columns:1fr}
+  .dishes-section{padding:3.5rem 1rem}
+  .gallery-section,.testi-section,.quote-section,.reserve-section{padding:3.5rem 1rem}
 }
