@@ -14,10 +14,10 @@
 /* Photo background — rich CSS food scene */
 .hero-photo{
   position:absolute;inset:0;z-index:0;
-  background-image: url('hero-bg.png');
+  background-image: url('img_mixed_grill4.jpg');
   background-size: cover;
   background-position: center center;
-  filter: brightness(0.88) saturate(1.05);
+  filter: brightness(0.82) saturate(1.1);
   background-repeat: no-repeat;
 }
 .hero-photo::before{
